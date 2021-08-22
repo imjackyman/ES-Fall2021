@@ -7,22 +7,22 @@
 > 第13腳位的外部為LED與內部LED,1秒亮,另1秒暗
 
 ### 電路圖：
-![image](https://user-images.githubusercontent.com/31268069/130342065-be43918a-33bf-4df8-b9ad-ff601897e91e.png)
+> ![image](https://user-images.githubusercontent.com/31268069/130342065-be43918a-33bf-4df8-b9ad-ff601897e91e.png)
 
 ### 程式：
-```c++
-// C++ code
-//
-void setup()
-{
-  pinMode(13, OUTPUT);
-}
-
-void loop()
-{
-  digitalWrite(13, HIGH);
-  delay(1000); // Wait for 1000 millisecond(s)
-  digitalWrite(13, LOW);
-  delay(1000); // Wait for 1000 millisecond(s)
-}
-```
+> ```c++
+> // C++ code
+> //
+> void setup()
+> {
+>   pinMode(13, OUTPUT);
+> }
+> 
+> void loop()
+> {
+>   digitalWrite(13, HIGH);
+>   delay(1000); // Wait for 1000 millisecond(s)
+>   digitalWrite(13, LOW);
+>   delay(1000); // Wait for 1000 millisecond(s)
+> }
+> ```
