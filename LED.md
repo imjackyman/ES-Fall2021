@@ -7,8 +7,7 @@
 > 第13腳位的外部為LED與內部LED,1秒亮,另1秒暗
 
 ### 電路圖：
-
-> 
+![image](https://user-images.githubusercontent.com/31268069/130342065-be43918a-33bf-4df8-b9ad-ff601897e91e.png)
 
 ### 程式：
 ```c++
