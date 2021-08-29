@@ -24,6 +24,7 @@
 > ```
 
 
+
 ## 1-2 在TinkerCAD開一個新的Circuit, 分別使甪R, G, B三種顏色的LED, ON (亮) 0.5秒, OFF(滅) 0.5秒
 
 ### 電路圖：
@@ -47,5 +48,34 @@
 >   digitalWrite(11, LOW);
 >   digitalWrite(9, LOW);
 >   delay(500); 
+> }
+> ```
+
+## 1-3 在TinkerCAD開一個新的Circuit, 分別使甪R, G, B三種顏色的LED, 讓LED ON, OFF的順序為R >> G >> B >> G >> R .... 無限循環.
+
+### 電路圖：
+> ![image](https://user-images.githubusercontent.com/31268069/131240080-447bbdad-20ea-4b74-b27d-cb4197c6acbc.png)
+
+### 程式：
+> ```c++
+> void setup()
+> {
+>   pinMode(13, OUTPUT);
+> }
+> 
+> void loop()
+> {
+>   digitalWrite(13, HIGH);
+>   delay(500); 
+>   digitalWrite(13, LOW);
+>   delay(500); 
+>   digitalWrite(11, HIGH);
+>   delay(500); 
+>   digitalWrite(11, LOW);
+>   delay(500); 
+>   digitalWrite(9, HIGH);
+>   delay(500); 
+>   digitalWrite(9, LOW);
+>   delay(500);
 > }
 > ```
