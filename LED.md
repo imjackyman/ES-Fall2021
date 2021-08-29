@@ -24,7 +24,8 @@
 >   digitalWrite(13, LOW);
 >   delay(1000); // Wait for 1000 millisecond(s)
 > }
- ```
+> ```
+
 
 ## 1-2 在TinkerCAD開一個新的Circuit, 分別使甪R, G, B三種顏色的LED, ON (亮) 0.5秒, OFF(滅) 0.5秒
 ### 說明：
