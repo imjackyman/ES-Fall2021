@@ -1,5 +1,11 @@
 # 嵌入式系統與實習
+<dl>
+  <dt>定義列表</dt>
+  <dd><a href="https://www.google.com/" target="_blank" title="Wibibi 網頁設計教學百科">google</a></dd>
 
+  <dt>在 HTML 中撰寫 Markdown</dt>
+  <dd>*無法* 運作的 **非常** 好。改用 HTML<em>標籤</em>。</dd>
+</dl>
 ## 2-1 analogWrite(): 並且觀查LED亮度變化是否有像"呼吸的效果"和示波器的波形有什麼關連性?
 
 ### 電路圖：
