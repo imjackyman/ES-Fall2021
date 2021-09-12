@@ -33,7 +33,7 @@
 
 
 
-## 2-2, RGB LED燈全彩模組, 分別讓LED輪流表現正紅、正綠、正藍，三個顏色，時間間隔1秒鐘。並且觀查LED顏色和波形或是電壓有什麼關連性
+## 2-2, RGB LED燈全彩模組, 分別讓LED輪流表現正紅、正綠、正藍，三個顏色，時間間隔1秒鐘。並且觀查LED顏色和波形或是電壓有什麼關連性?
 
 ### 電路圖：
 > ![test2](https://user-images.githubusercontent.com/31268069/132115082-819007ea-5e67-49a0-a76f-4ff99fec2c43.gif)
@@ -68,7 +68,7 @@
 >}
 > ```
 
-## 2-3, 讓你的RGB LED燈全彩模組也可會"呼吸", LED顏色變化是否有像"呼吸的效果"和示波器的波形有什麼關連性? (
+## 2-3, 讓你的RGB LED燈全彩模組也可會"呼吸", LED顏色變化是否有像"呼吸的效果"和示波器的波形有什麼關連性?
 
 ### 電路圖：
 > ![lab3](https://user-images.githubusercontent.com/31268069/132971088-573ba7b4-7c84-4bae-988c-de328ad67ae3.gif)
@@ -125,3 +125,24 @@
 > }
 > ```
 
+## 2-4 analogRead(), 1024解析度 (i.e.,10-bit): 可變電阻 + 序列監視器與輸出; 當你改變可變電阻的阻值(e.g., 10K-ohm)時，序列監視器輸出的數值有什麼改變? 數值又有什麼意義呢?
+
+### 電路圖：
+> ![lab4-1](https://user-images.githubusercontent.com/31268069/132971779-d25805dd-067d-479b-882f-0676104a13b4.gif)
+
+### 程式：
+> ```c++
+> int sensorValue = 0;
+> void setup()
+> {
+>   pinMode(A0, INPUT);
+>   Serial.begin(9600);
+> }
+> 
+> void loop()
+> {
+>   sensorValue = analogRead(A0);
+>   Serial.println(sensorValue);
+>   delay(10);
+> }
+> ```
