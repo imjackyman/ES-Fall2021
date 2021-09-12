@@ -149,7 +149,7 @@
 
 ### digitalRead(): 按鍵 + 序列監視器與輸出說明與介紹
 ### 電路圖：
-> ![lab4-2](https://user-images.githubusercontent.com/31268069/132971970-cff504af-4b69-4202-aae9-851ce380cc08.gif)
+> ![lab4-2](https://user-images.githubusercontent.com/31268069/132972056-1d13659a-cd7e-41ce-95e6-337aed459f55.gif)
 
 ### 程式：
 > ```c++
