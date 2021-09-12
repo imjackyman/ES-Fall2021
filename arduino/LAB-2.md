@@ -67,3 +67,61 @@
 >  	delay(1000);  
 >}
 > ```
+
+## 2-3, 讓你的RGB LED燈全彩模組也可會"呼吸", LED顏色變化是否有像"呼吸的效果"和示波器的波形有什麼關連性? (
+
+### 電路圖：
+> ![lab3](https://user-images.githubusercontent.com/31268069/132971088-573ba7b4-7c84-4bae-988c-de328ad67ae3.gif)
+
+### 程式：
+> ```c++
+> int brightness = 0;
+> int Red = 9;
+> int Green = 10;
+> int Blue = 11;
+> int number = 5;
+> void setup()
+> {
+>   pinMode(Red, OUTPUT);
+>   pinMode(Green, OUTPUT);
+>   pinMode(Blue, OUTPUT);
+> }
+> 
+> void loop()
+> {
+> //Red
+>   for ( brightness = 0 ; brightness <=255 ; brightness +=number){
+>   	analogWrite(Red,brightness);
+>     delay(50);
+>   }
+>   
+>   for ( brightness = 255 ; brightness >=0 ; brightness -=number){
+>   	analogWrite(Red,brightness);
+>     delay(50);
+>   }
+>   delay(500);
+> //Green
+>   for ( brightness = 0 ; brightness <=255 ; brightness +=number){
+>   	analogWrite(Green,brightness);
+>     delay(50);
+>   }
+>   
+>   for ( brightness = 255 ; brightness >=0 ; brightness -=number){
+>   	analogWrite(Green,brightness);
+>     delay(50);
+>   }
+>   delay(500);
+> //Blue
+>   for ( brightness = 0 ; brightness <=255 ; brightness +=number){
+>     analogWrite(Blue,brightness);
+>     delay(50);
+>   }
+> 
+>   for ( brightness = 255 ; brightness >=0 ; brightness -=number){
+>     analogWrite(Blue,brightness);
+>     delay(50);
+>   }
+>   delay(500);
+> }
+> ```
+
